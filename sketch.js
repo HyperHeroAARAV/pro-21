@@ -40,8 +40,10 @@ function draw() {
         music.play();
     }
 
-    if(block2.isTouching(ball) && ball.bounceOff(block2)){
+    if(block2.isTouching(ball)){
         ball.shapeColor = "orange";
+        ball.velocityX = 0;
+        ball.velocityY = 0;
         
         //music.stop;
         //music=stop();
